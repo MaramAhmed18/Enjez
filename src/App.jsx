@@ -1,15 +1,18 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import NotFound from './pages/NotFound';
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
 function App() {
+  const [count, setCount] = useState(0)
+
   return (
-    <Router>
-      <Routes>
-        <Route path="/" element={<div>Welocome My Team in Enjez WebSite Project</div>} />
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </Router>
-  );
+    <>
+      <div>
+        <h1>Welcome My team in Enjez WebSite Project</h1>
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App
